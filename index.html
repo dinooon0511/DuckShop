@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/Logo.svg" alt="logo" class="header__logo"/>
+      <nav class="header__nav">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item active">Главная</li>
+          <li class="nav-menu__item nav-menu__item--dropdown">Каталог<img src="./img/chevron-down.svg" alt="chevron-down"/></li>
+          <li class="nav-menu__item">Блог</li>
+          <li class="nav-menu__item">Отзывы</li>
+          <li class="nav-menu__item">Контакты</li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <img src="./img/cart.svg" alt="cart" class="header__cart">
+        <button class="header__button button">Заказать обратный звонок</button>
+        <img src="./img/burger.svg" alt="burger" class="header__burger">
+      </div>
+      <div class="modal-burger">
+        <div class="modal-burger__overlay"></div>
+        <div class="modal-burger__content">
+          <div class="modal-burger__up">
+            <img src="./img/Logo.svg" alt="logo" class="header__logo-modal"/>
+            <img src="./img/colse.svg" alt="close" class="header__close-modal">
+          </div>
+          <nav class="header__nav-modal">
+            <ul class="nav-menu__list-modal">
+              <li class="nav-menu__item active">Главная</li>
+              <li class="nav-menu__item">Каталог</li>
+              <li class="nav-menu__item">Блог</li>
+              <li class="nav-menu__item">Отзывы</li>
+              <li class="nav-menu__item">Контакты</li>
+            </ul>
+          </nav>
+          <div class="header_buttons-modal">
+            <button class="header__button-modal button">Заказать обратный звонок</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal-callback" id="modalCallback">
+      <div class="modal-callback__overlay"></div>
+      <div class="modal-callback__content">
+        <button class="modal-callback__close" id="closeModalCallback">&times;</button>
+        <form class="modal-callback__form">
+          <label class="modal-callback__label">
+            <p class="modal-callback__label-flex">Имя <span class="modal-callback__required">*</span></p>
+            <input type="text" class="modal-callback__input" placeholder="Введите ваше имя" required>
+          </label>
+          <label class="modal-callback__label">
+            <p class="modal-callback__label-flex">Телефон <span class="modal-callback__required">*</span></p>
+            <input type="tel" class="modal-callback__input" placeholder="+7 000 000 00 00" required>
+          </label>
+          <button type="submit" class="modal-callback__submit">Отправить</button>
+          <p class="modal-callback__policy">
+            Нажимая кнопку "Отправить", вы соглашаетесь с
+            <a href="#" class="modal-callback__link">политикой конфиденциальности</a>
+            и
+            <a href="#" class="modal-callback__link">договором оферты</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <section class="main">
+      <div class="main__container">
+        <p class="main__text main__text--up">МНОГО</p>
+        <p class="main__text main__text--down">УТОЧЕК</p>
+        <p class="main__desc">Маленький друг найдётся для каждого <br/> в этом кряквенно жёлтом мире</p>
+        <button class="main__btn button">Смотреть уточек</button>
+        <img src="./img/duck.png" alt="duck" width="620px" class="main__duck">
+      </div>
+      <nav class="main__nav">
+        <ul class="main-menu__list">
+          <li class="main-menu__item active"><img src="./img/arrow.svg" alt="arrow" />Классические</li>
+          <li class="main-menu__item"><img src="./img/arrow.svg" alt="arrow" />Уточки панки</li>
+          <li class="main-menu__item"><img src="./img/arrow.svg" alt="arrow" />Супергерои</li>
+          <li class="main-menu__item"><img src="./img/arrow.svg" alt="arrow" />Милые</li>
+          <li class="main-menu__item"><img src="./img/arrow.svg" alt="arrow" />Для детей</li>
+          <li class="main-menu__item"><img src="./img/arrow.svg" alt="arrow" />Взрослым</li>
+        </ul>
+      </nav>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
