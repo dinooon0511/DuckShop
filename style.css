@@ -497,8 +497,8 @@ html, body {
 }
 .modal-callback__content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 29%;
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 20px;
