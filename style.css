@@ -340,7 +340,7 @@ html, body {
     width: 420px;
   }
   .header__button{
-    font-size: 10px;
+    display: none;
   }
   .main-menu__list{
     display: flex;
